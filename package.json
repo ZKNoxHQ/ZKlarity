@@ -1,0 +1,16 @@
+{
+  "name": "clear-signing-aave",
+  "version": "1.0.0",
+  "description": "ZK clear signing circuit for Aave v3 transactions on Ledger Nano (BLS12-381)",
+  "scripts": {
+    "validate": "node scripts/validate_circuit.js",
+    "witness": "node scripts/gen_witness_input.js all",
+    "export-vk": "node scripts/export_vk_to_c.js"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "poseidon-bls12381": "^1.0.2",
+    "poseidon-bls12381-circom": "^1.0.0"
+  }
+}
